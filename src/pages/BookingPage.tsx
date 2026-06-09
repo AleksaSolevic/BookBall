@@ -19,8 +19,17 @@ export function BookingPage() {
 
   const formatTime = (t: string) => t.slice(0, 5);
 
-  function handleSuccess() {
-    navigate("/");
+  function handleSuccess(name: string, email: string, phone: string) {
+    if (!slot) return;
+    navigate("/confirmation", {
+      state: {
+        name,
+        email,
+        phone,
+        date: formattedDate,
+        time: `${formatTime(slot.start_time)} – ${formatTime(slot.end_time)}`,
+      },
+    });
   }
 
   if (loading) return <p className={styles.message}>Loading slot details...</p>;
