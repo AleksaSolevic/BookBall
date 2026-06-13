@@ -1,0 +1,52 @@
+.page {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.back {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: #2563eb;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
+
+.slotSummary {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.slotDate {
+  font-size: 0.9rem;
+  color: #1e40af;
+  margin: 0 0 0.25rem;
+  font-weight: 500;
+}
+
+.slotTime {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin: 0;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 1.5rem;
+}
+
+.message {
+  text-align: center;
+  color: #6b7280;
+  padding: 3rem 1.5rem;
+}
