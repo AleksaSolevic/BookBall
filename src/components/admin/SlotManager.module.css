@@ -1,0 +1,151 @@
+.form {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #111827;
+  background: #ffffff;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.addButton {
+  padding: 0.5rem 1.25rem;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  height: fit-content;
+}
+
+.addButton:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.addButton:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.formError {
+  font-size: 0.85rem;
+  color: #ef4444;
+  margin: 0.75rem 0 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.slotRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.875rem 1.25rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.slotRow:last-child {
+  border-bottom: none;
+}
+
+.slotDate {
+  font-size: 0.875rem;
+  color: #111827;
+  min-width: 160px;
+}
+
+.slotTime {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #2563eb;
+  min-width: 110px;
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  min-width: 72px;
+  text-align: center;
+}
+
+.available {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.booked {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.deleteButton {
+  margin-left: auto;
+  padding: 0.375rem 0.875rem;
+  background: transparent;
+  border: 1px solid #fca5a5;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: #ef4444;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.deleteButton:hover:not(:disabled) {
+  background: #fef2f2;
+}
+
+.deleteButton:disabled {
+  border-color: #e5e7eb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.message {
+  color: #6b7280;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+}
